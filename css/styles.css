@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gameDiv {
+    width: 80%;
+    height: 500px;
+    margin: 100px auto 20px;
+    overflow: hidden;
+}
+.gamefield {
+    position: relative;
+    height: 500px;
+    background:url('../img/bg-001.png');
+}
+
+.baseunit {
+    position: absolute;
+    /*border: 1px solid red;/**/
+}
+
+
+.face-left {
+    transform: scaleX(-1);
+}
+
+.lifebar {
+    position: absolute;
+    /*left: 50%;/**/
+    text-align: center;
+    color: #f6f6f6;
+    background-color: #666666;
+    border: 1px solid #333333;
+}
+
+.ui {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+    /*grid-gap: 2vw;/**/
+    background-color:#e4dba1;
+    color: #222222;
+}
+.ui div {
+    text-align: center;
+}
+.orb {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ui .bg {
+    width: 100%;
+    height: 100%;
+}
+.ui .image {
+    height: 100%;
+}
+#attack1 .image {
+    background: url('../img/att1.png') center center no-repeat;
+}
+#attack2 .image {
+    background: url('../img/att2.png') center center no-repeat;
+}
+#attack3 .image {
+    background: url('../img/att3.png') center center no-repeat;
+}
+#block .image {
+    background: url('../img/block.png') center center no-repeat;
+}
+/*
+.ui .orb,
+.ui .image {
+    height: 100px;
+}
+.ui .value {
+}/**/
